@@ -1,0 +1,72 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  background: #343a40;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+} */
+.card {
+  min-height: 200px;
+  margin-top: auto
+  
+}
+
+.custom-img {
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  display: inline-flex;
+
+
+  
+}
+
+/* .social-container {
+  background: #eee;
+  padding: 25px 50px;
+} */
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translate(-2px);
+}
+a.facebook {
+  color: #4968ad;
+}
+a.instagram {
+  color:#bc2a8d;
+}
+.social-title {
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic ;
+  color: chocolate;
+  text-decoration: chocolate underline;
+
+}
+
+/* .form-control {
+
+  justify-content: right;
+  align-items: right;
+} */
+
+.form-controllop {
+  width: 50% !important;
+}
