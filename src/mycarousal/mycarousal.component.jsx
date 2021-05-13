@@ -13,7 +13,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Mycarousalcomponent = () => {
     return (
-        <div id="home">
+        <div className="carousel-setting">
             <Carousel>
   <Carousel.Item>
     <img

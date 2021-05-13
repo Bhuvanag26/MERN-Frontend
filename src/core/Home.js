@@ -11,6 +11,11 @@ import Mycarousalcomponent from "../mycarousal/mycarousal.component";
 
 
 
+
+
+
+
+
 const nextVariants = {
   hidden: {
     x: '100vw'
@@ -76,55 +81,27 @@ export default function Home() {
   return (
 
     <Base title="Home Page" description="Welcome to the Tshirt Store">
+
+
+
       <Mycarousalcomponent />
+      
+    
+      
+    
      
      
-     {/* <Carousel fade>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://www.linkpicture.com/q/eight_1.png"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Second slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-      */}
+    
+     
+     
      
       <motion.div variants={nextVariants} initial="hidden" animate="visible">
-        <p style={{color:"#7000FF", fontSize : "30px"}}><h2>Hey There :D</h2> <motion.div variants={childVariants}>grab your awesome T-Shirts</motion.div></p>
+        <div style={{color:"#7000FF", fontSize : "30px"}} className="text"><h2>Hey There :D</h2> <motion.div variants={childVariants}>grab your awesome T-Shirts</motion.div></div>
          </motion.div>
          
 
          <motion.h1
-                 className="mb-5" 
+                 className="mb-5 edit-contactus" 
                  variants={textvaraints}
                  initial="initial"
                     animate="visible"
@@ -142,17 +119,20 @@ export default function Home() {
         {/* <motion.h1 animate = {{fontSize:100}} > ALL OF TSHIRTS</motion.h1> */}
       
 
-        <div className="row">
+        <div className="row ">
+          
           {products.map((product , index) => {
             return(
               <div key={index} className="col-4 mb-4">
                 <Card  product={product}/>
                 </div>
+              
             )
           })}
         </div>
       </div>
       
+    
       
     </Base>
   

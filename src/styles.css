@@ -6,6 +6,7 @@
 
 body {
   background: #343a40;
+ 
 }
 
 /* footer {
@@ -16,9 +17,14 @@ body {
 } */
 .card {
   min-height: 200px;
-  margin-top: auto
+  margin-top: auto;
+  max-width: 300px;
+  display: flex;
+  transition: 0.3s;
+  
   
 }
+
 
 .custom-img {
   height: 300px;
@@ -70,3 +76,91 @@ a.instagram {
 .form-controllop {
   width: 50% !important;
 }
+
+.carousel-setting {
+  position: relative;
+    left: 0px;
+    padding: -30px;
+    margin: -40px;
+     
+}
+
+.legend {
+  border-bottom: 1px solid #c5c5c5;
+  margin: 0 0 20px;
+    padding: 0 0 10px;
+    width: 29%;
+    box-sizing: border-box;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.8rem;
+    
+
+
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button {
+  background: none;
+  color: #ffa260;
+  border:2px solid;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+.button:hover {
+  border-color:#32cd32;
+  color: antiquewhite;
+  box-shadow: 0 0.5em 0.5em -0.4em #32cd32;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+ 
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+/* .text {
+ 
+
+} */
+
+.image-helper {
+  width: 100px;
+
+}
+
+
+
+
+

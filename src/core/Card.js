@@ -3,6 +3,7 @@ import ImageHelper from "./helper/ImageHelper";
 import { Redirect } from "react-router-dom";
 import { addItemToCart, removeItemFromCart } from "./helper/cartHelper";
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import "../styles.css";
 
 const Card = ({
   product,
@@ -60,15 +61,15 @@ const Card = ({
     );
   };
   return (
-    <div className="card text-white bg-dark border border-info  ">
-      <div className="card-header lead">{cartTitle}</div>
-      <div className="card-body">
+    <div className="card text-white bg-dark border border-info ">
+      <div className="card-header lead ">{cartTitle}</div>
+      <div className="card-body ">
         {getARedirect(redirect)}
-        <ImageHelper product={product} />
+        <ImageHelper className="image-helper" product={product} />
         <p className="lead bg-success font-weight-normal text-wrap">
           {cartDescrption}
         </p>
-        <p className="btn btn-success rounded  btn-sm px-4">$ {cartPrice}</p>
+        <p className="btn btn-success rounded  btn-sm px-4">Rs. {cartPrice}</p>
         <div className="row">
           <div className="col-12">{showAddToCart(addtoCart)}</div>
           <div className="col-12">{showRemoveFromCart(removeFromCart)}</div>
