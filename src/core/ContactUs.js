@@ -31,7 +31,7 @@ const ContactUs = () => {
               </div>
               <div className="col-8" style={{textAlign : "right"}}>
         
-        <p style={{color:"#e76f51", fontSize : "25px" , textAlign:"right"}}>
+        <p style={{color:"#e76f51", fontSize : "25px" , textAlign:"right" }}>
     For any query or product related issues,<br />
     Do contact us on the below details<br />
    < AiOutlineMail /> : bhuvanagarwal30@gmail.com <br />
