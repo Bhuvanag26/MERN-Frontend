@@ -8,6 +8,7 @@ import { BsClock} from 'react-icons/bs';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import img6 from '../images/call.png'
+import LightSpeed from 'react-reveal/LightSpeed';
 
 
 
@@ -30,8 +31,9 @@ const ContactUs = () => {
 
               </div>
               <div className="col-8" style={{textAlign : "right"}}>
-        
-        <p style={{color:"#e76f51", fontSize : "25px" , textAlign:"right" }}>
+              <LightSpeed left cascade>
+          <div>
+          <p style={{color:"#ffebff", fontSize : "25px" , textAlign:"right" }}>
     For any query or product related issues,<br />
     Do contact us on the below details<br />
    < AiOutlineMail /> : bhuvanagarwal30@gmail.com <br />
@@ -42,13 +44,21 @@ const ContactUs = () => {
     
 
     </p>
+          </div>
+        </LightSpeed>
+      
+        
+        
+        
+       
+
     </div>
     
 
      </div>
  </div>
  <legend class="legend">
-   <span>Write Us</span>
+   <span className="text-pink">Write Us</span>
  </legend>
 
  <div class="field note no-label">Jot us a note and we’ll get back to you as quickly as possible.</div>
@@ -75,7 +85,7 @@ const ContactUs = () => {
     <Form.Control className="form-controllop" as="textarea" rows={3} />
   <Form.Group controlId="formBasicCheckbox">
   </Form.Group>
-  <Button className="button" type="submit">
+  <Button className="button btn  btn-lg" type="submit">
     Submit
   </Button>
 </Form>

@@ -3,6 +3,7 @@
 .jumbotron,
 .nav :hover {
   border-radius: 0px;
+
 }
 
 body {
@@ -63,11 +64,14 @@ a.instagram {
   font-size: 32px;
   font-weight: 500;
   font-style: italic ;
-  color: chocolate;
-  text-decoration: chocolate underline;
+  color: #b033fa;
+  
 
 }
 
+.text-pink {
+  color: #b033fa;
+}
 /* .form-control {
 
   justify-content: right;
@@ -84,8 +88,11 @@ a.instagram {
     padding: -30px;
     margin: -40px;
   
+
+  
      
 }
+
 
 .legend {
   border-bottom: 1px solid #c5c5c5;
@@ -111,15 +118,15 @@ a.instagram {
 
 .button {
   background: none;
-  color: #ffa260;
+  color: #7b2cbf;
   border:2px solid;
   font-size: 1em;
   transition: all 0.25s;
 }
 .button:hover {
-  border-color:#32cd32;
+  border-color:#6718a8;
   color: antiquewhite;
-  box-shadow: 0 0.5em 0.5em -0.4em #32cd32;
+  box-shadow: 0 0.5em 0.5em -0.4em  #6F00ED;
   transform: translateY(-0.25em);
   cursor: pointer;
 }

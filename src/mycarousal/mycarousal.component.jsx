@@ -20,7 +20,7 @@ const Mycarousalcomponent = () => {
       className="d-block w-100 custom-img"
       src={img1}
       alt="First slide"
-      height="600px"
+      height="800px"
     />
     <Carousel.Caption>
       <h3>First slide label</h3>

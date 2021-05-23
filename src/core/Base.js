@@ -34,7 +34,7 @@ const Base = ({
     <Menu />
     <div className="container-fluid">
       <div className="jumbotron bg-dark text-white text-center">
-        <motion.h2 animate={{scale: 1.5, color: '#046D29' , }}>{title}</motion.h2>
+        <motion.h2 animate={{scale: 1.5, color: '#ffffff' , }}>{title}</motion.h2>
         <p className="lead">{description}</p>
       </div>
       <div className={className}>{children}</div>

@@ -18,9 +18,9 @@ const nextVariants = {
 const buttonVariants = {
   hover : {
     scale: 1.1,
-    color: "rgb(255, 255, 0)",
-     textShadow:'0px 0px 8px #ff1a1a' , 
-     boxShadow:"0px 0px 8px rgb(255, 26, 26)",
+    color: "#550385",
+     textShadow:'0px 0px 8px ' , 
+     boxShadow:"0px 0px 8px 050505",
      transition: {
          duration: 0.3,
          yoyo:Infinity
@@ -103,7 +103,7 @@ const Signup = () => {
                         variants={buttonVariants}
                         animate="visible"
                         whileHover="hover"
-                        className="btn btn-success btn-block">Submit
+                        className="btn btn-success btn-block" style={{background : "#6718a8", borderRadius : "50px", color : "white", height : "50px", borderColor :"white", borderWidth : "2px", fontSize : "20px", fontWeight : "bold"}}>Submit
                         </motion.button>
           </motion.form>
         </div>

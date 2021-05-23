@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#2ecc72" };
+    return { color: "#b033fa" };
   } else {
     return { color: "#FFFFFF" };
   }

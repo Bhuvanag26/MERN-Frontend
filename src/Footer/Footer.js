@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const buttonVariants = {
     hover : {
       scale: 1.5,
-      color: "rgb(255, 255, 0)",
-       textShadow:'0px 0px 8px #rgb(239, 24, 51) ' , 
-       boxShadow:"0px 0px 8px rgb(255, 26, 26)",
+      color: "#7114bc",
+       textShadow:'0px 0px 8px ##5A20CB ' , 
+       boxShadow:"0px 0px 8px #6327a3",
        transition: {
            duration: 0.3,
            yoyo:Infinity
@@ -19,7 +19,7 @@ const buttonVariants = {
 const Footer = () =>  {
     return (
         <footer className="footer bg-dark mt-auto py-3">
-        <div className="container-fluid bg-success text-white text-center py-3">
+        <div className="container-fluid bg-success text-white text-center py-3" style={{background : "linear-gradient(90deg, #6718a8 35%, #b033fa 100%)"}}>
           <h4>If you got any questions, feel free to reach out!</h4>
   
           <Link to="/Contact">
