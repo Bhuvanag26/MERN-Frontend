@@ -3,13 +3,13 @@ import {motion} from 'framer-motion';
 import { Link } from "react-router-dom";
 const buttonVariants = {
     hover : {
-      scale: 1.5,
+      scale: 1.2,
       color: "#7114bc",
        textShadow:'0px 0px 8px ##5A20CB ' , 
-       boxShadow:"0px 0px 8px #6327a3",
+       boxShadow:"0px 0px 8px #6718a8",
        transition: {
-           duration: 0.3,
-           yoyo:Infinity
+           duration: 0.2,
+          
   
        }
     }
@@ -28,7 +28,7 @@ const Footer = () =>  {
                           variants={buttonVariants}
                           animate="visible"
                           whileHover="hover"
-                          className="btn btn-warning btn-lg">Contact Us
+                          className="btn btn-dark btn-lg">Contact Us
                           </motion.button>
           
           </Link>

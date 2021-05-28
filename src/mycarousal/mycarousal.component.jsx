@@ -3,6 +3,8 @@ import "../styles.css";
 import img1 from '../images/new.jpg';
 import img2 from '../images/imagesix.jpg'
 import img3 from '../images/imageseven.jpg'
+import img10 from '../images/img10.jpg'
+
 
 
 
@@ -23,8 +25,8 @@ const Mycarousalcomponent = () => {
       height="800px"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Update your wardrobe </h3>
+      <p>with our latest trends.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -35,8 +37,8 @@ const Mycarousalcomponent = () => {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3></h3>
+      <p>.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -47,10 +49,24 @@ const Mycarousalcomponent = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3></h3>
+      <p></p>
     </Carousel.Caption>
   </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100 custom-img"
+      src={img10}
+      alt="First slide"
+      height="800px"
+    />
+    <Carousel.Caption>
+      <h3> Coming Soon!!</h3>
+      <p>Soon we are bringing wide range of sweatshirts.</p>
+      
+    </Carousel.Caption>
+  </Carousel.Item>
+  
 </Carousel>
         </div>
         

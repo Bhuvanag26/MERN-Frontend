@@ -7,7 +7,7 @@ import { BiPhone } from 'react-icons/bi';
 import { BsClock} from 'react-icons/bs';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
-import img6 from '../images/call.png'
+import img6 from '../images/contactus.png'
 import LightSpeed from 'react-reveal/LightSpeed';
 
 
@@ -27,13 +27,17 @@ const ContactUs = () => {
         <div className="container-fluid">
             <div className="row text-center">
               <div className="col-4">
-              <img src={img6} height="450" width="600" style={{borderRadius : "50%" , marginTop:"-150px" }} />
+                
+              
+              <img src={img6} height="600" width="750px" style={{borderRadius : "50%" , marginTop:"-150px" }} />
+              
 
               </div>
               <div className="col-8" style={{textAlign : "right"}}>
               <LightSpeed left cascade>
           <div>
           <p style={{color:"#ffebff", fontSize : "25px" , textAlign:"right" }}>
+          
     For any query or product related issues,<br />
     Do contact us on the below details<br />
    < AiOutlineMail /> : bhuvanagarwal30@gmail.com <br />
@@ -46,6 +50,7 @@ const ContactUs = () => {
     </p>
           </div>
         </LightSpeed>
+        
       
         
         

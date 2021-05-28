@@ -31,7 +31,7 @@ const UserDashBoard = () => {
 
 
     return (
-        <Base title="User Dashboard" description="">
+        <Base title="" description="">
             <div  className="row">
             <div className="col-6">
                 <img src={img4} height="550" width="550" style={{borderRadius : "50%"}} />
@@ -43,7 +43,7 @@ const UserDashBoard = () => {
           
         </Zoom>
         <LightSpeed>
-        <p style={{color:"#ffffff", fontSize : "30px", textAlign : "right"}}>Welcome to LCO Merch, <br /> There are Amazing merch waiting for you <br /> so go grab yourself some Amazing clothing
+        <p style={{color:"#ffffff", fontSize : "30px", textAlign : "right"}}>Welcome to The ComfyTee, <br /> There are Amazing T-Shirts <br /> waiting for you.
         
         </p>
         </LightSpeed>

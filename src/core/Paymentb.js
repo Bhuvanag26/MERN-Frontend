@@ -40,8 +40,10 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
               options={{ authorization: info.clientToken }}
               onInstance={instance => (info.instance = instance)}
             />
-            <button className="btn btn-block btn-success" onClick={onPurchase}>
-              Buy
+            <button className=""
+            style={{ height : "60px" , width : "550px", borderRadius : "50px",borderColor : "white", background : "#6c1d9a" , color : "white",  fontWeight : "bold"}}
+             onClick={onPurchase}>
+              PAY SECURELY
             </button>
           </div>
         ) : (
@@ -68,11 +70,18 @@ const Paymentb = ({ products, setReload = f => f, reload = undefined }) => {
         .then(response => {
           setInfo({ ...info, success: response.success, loading: false });
           console.log("PAYMENT SUCCESS");
-          
+
+          const orderData = {
+            products:products,
+            transaction_id: response.transaction.id,
+            amount: response.transaction.amount
+
+          }
+          createOrder(userId , token , orderData)
           
           cartEmpty(() => {
             console.log("Did we got a crash");
-          })
+          });
           
           setReload(!reload);
         })

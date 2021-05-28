@@ -2,6 +2,8 @@ import React , {Fragment} from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout , isAuthenticated } from "../auth/helper";
 import { motion } from "framer-motion";
+import mylogo from '../images/Mylogo.png'
+import "../styles.css";
 
 
 
@@ -15,7 +17,13 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => (
   <div>
+    
+    
     <ul className="nav nav-tabs bg-dark">
+      <div className="my-logo">
+        <img src={mylogo} alt="My Logo" width= "85px" height="auto" />
+        </div>
+    
       <li className="nav-item">
       
         <Link style={currentTab(history, "/")} className="nav-link" to="/">

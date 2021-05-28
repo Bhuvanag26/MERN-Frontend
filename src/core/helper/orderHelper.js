@@ -12,7 +12,7 @@ export const createOrder = (userId , token , orderData) => {
 
     })
     .then(response => {
-        return Response.json();
+        return response.json();
     })
     .catch(err => console.log(err));
 };
